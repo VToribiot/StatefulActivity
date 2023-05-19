@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.blue.shade900,
+          backgroundColor: Colors.blue,
           appBar: AppBar(
-            title: Text('Magi 8 Ball'),
-            backgroundColor: Colors.black,
+            title: Text('Ask Me Anything'),
+            backgroundColor: Colors.blue.shade900,
           ),
           body: Ball(),
         ),
