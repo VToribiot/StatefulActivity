@@ -10,9 +10,9 @@ class Ball extends StatefulWidget {
 
 class _BallState extends State<Ball> {
 
-  int n =  1;
+  int rndNum =  1;
   void rndNumber() {
-    n =  Random().nextInt(5) + 1;
+    rndNum =  Random().nextInt(5) + 1;
     setState(() {});
   }
 
@@ -21,7 +21,7 @@ class _BallState extends State<Ball> {
     return Center(
       child: Expanded(child: TextButton(
         onPressed: () { rndNumber(); },
-        child: Image.asset('images/ball$n.png'),
+        child: Image.asset('images/ball$rndNum.png'),
       )
       ),
     );
